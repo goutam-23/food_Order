@@ -1,0 +1,170 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+  overflow: hidden;
+  width: 100vw;
+  height: 100vw;
+
+}
+.h_bar{
+    background-color: white;
+    color: black;
+    height: 7vh;
+    
+}
+.h_bar ul{
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  margin-right: 145px;
+  margin-left: 90px;
+  padding-top: 15px;
+}
+.h_bar ul li{
+  list-style: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 5px;
+}
+.h_bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.h_bar ul li a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+.container{
+  background-image: url(./img/img1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: bottom;
+
+}
+.para{
+  height: 30vh;
+  width: 43vw;
+  background-color: rgba(233, 76, 110, 0.5);
+  position: relative;
+  top: 165px;
+  left: 80px;
+  color: white;
+  font-family: sans-serif;
+}
+.para h1{
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 40px;
+    left: 35px;
+}
+.para p{
+
+  font-weight:normal;
+    position: absolute;
+    top: 80px;
+    left: 35px;
+
+}
+
+
+.f_bar{
+    height: 13vh;
+  background: linear-gradient(
+    90deg,
+    rgb(247, 43, 155) 0%,
+    rgb(240, 233, 40) 100%
+  );
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 768px) {
+  body{
+    width: 100vw;
+    height: 100vh;
+  }
+  .h_bar{
+    height: 230px;
+  }
+  .h_bar ul {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+    text-align: center;
+    margin-left: 130px;
+  }
+
+  .h_bar ul li {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    height: 60vh;
+  }
+
+  .para {
+    width: 80vw;
+    left: 10vw;
+    text-align: center;
+  }
+
+  .para h1,
+  .para p {
+    left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+  .h_bar{
+    height: 180px;
+  }
+  .h_bar ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 9px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 138px;
+  }
+
+  .h_bar ul li {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    height: 65vh;
+  }
+
+  .para {
+    width: 90vw;
+    left: 5vw;
+    text-align: center;
+  }
+
+  .para h1,
+  .para p {
+    left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+}
